@@ -1,0 +1,123 @@
+2025-09-10 00:23:03,428 | WARNING | BANKNIFTY: empty fetch
+2025-09-10 00:23:04,068 | WARNING | NIFTY: empty fetch
+2025-09-10 00:29:45,335 | WARNING | BANKNIFTY: empty fetch
+2025-09-10 00:29:53,880 | WARNING | NIFTY: empty fetch
+2025-09-10 00:31:41,189 | WARNING | BANKNIFTY: empty fetch
+2025-09-10 00:31:52,527 | WARNING | NIFTY: empty fetch
+2025-09-10 00:49:08,398 | WARNING | BANKNIFTY: empty fetch
+2025-09-10 00:49:08,632 | ERROR | NIFTY: error in update_live_data: analyze_anomalies() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "C:\Users\shant\Desktop\trading-radar\utils\live_updater.py", line 92, in update_live_data
+    analyzed = _safe_analyze(raw, inst.strip().upper())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shant\Desktop\trading-radar\utils\live_updater.py", line 63, in _safe_analyze
+    df = analyze_anomalies(df_raw, instrument)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: analyze_anomalies() takes 1 positional argument but 2 were given
+2025-09-10 15:58:49,353 | WARNING | Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=12)")': /option-chain
+2025-09-10 15:59:02,587 | WARNING | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=12)")': /option-chain
+2025-09-10 15:59:17,066 | WARNING | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=12)")': /option-chain
+2025-09-10 15:59:33,915 | WARNING | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=12)")': /option-chain
+2025-09-10 15:59:59,995 | WARNING | Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=BANKNIFTY
+2025-09-10 16:00:15,246 | WARNING | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=BANKNIFTY
+2025-09-10 16:00:31,696 | WARNING | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=BANKNIFTY
+2025-09-10 16:00:50,563 | WARNING | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=BANKNIFTY
+2025-09-10 16:01:18,014 | WARNING | Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=12)")': /option-chain
+2025-09-10 16:01:31,293 | WARNING | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=12)")': /option-chain
+2025-09-10 16:01:45,728 | WARNING | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=12)")': /option-chain
+2025-09-10 16:02:02,580 | WARNING | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=12)")': /option-chain
+2025-09-10 16:02:28,743 | WARNING | Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=BANKNIFTY
+2025-09-10 16:02:44,013 | WARNING | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=BANKNIFTY
+2025-09-10 16:03:00,469 | WARNING | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=BANKNIFTY
+2025-09-10 16:03:19,349 | WARNING | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=BANKNIFTY
+2025-09-10 16:03:47,279 | WARNING | Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=12)")': /option-chain
+2025-09-10 16:04:12,526 | WARNING | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=12)")': /option-chain
+2025-09-10 16:04:27,001 | WARNING | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=12)")': /option-chain
+2025-09-10 16:04:43,824 | WARNING | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=12)")': /option-chain
+2025-09-10 16:05:10,061 | WARNING | Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=BANKNIFTY
+2025-09-10 16:05:25,371 | WARNING | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=BANKNIFTY
+2025-09-10 16:05:42,058 | WARNING | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=BANKNIFTY
+2025-09-10 16:06:00,891 | WARNING | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=BANKNIFTY
+2025-09-10 16:06:28,490 | WARNING | Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=12)")': /option-chain
+2025-09-10 16:06:41,734 | WARNING | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=12)")': /option-chain
+2025-09-10 16:06:56,199 | WARNING | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=12)")': /option-chain
+2025-09-10 16:07:13,053 | WARNING | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=12)")': /option-chain
+2025-09-10 16:07:39,160 | WARNING | Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=BANKNIFTY
+2025-09-10 16:07:54,400 | WARNING | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=BANKNIFTY
+2025-09-10 16:08:10,889 | WARNING | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=BANKNIFTY
+2025-09-10 16:08:29,737 | WARNING | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=BANKNIFTY
+2025-09-10 16:08:45,084 | WARNING | BANKNIFTY: empty fetch
+2025-09-10 16:08:59,163 | WARNING | Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=NIFTY
+2025-09-10 16:09:14,474 | WARNING | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=NIFTY
+2025-09-10 16:09:30,924 | WARNING | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=NIFTY
+2025-09-10 16:09:49,854 | WARNING | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=NIFTY
+2025-09-10 16:10:17,695 | WARNING | Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=12)")': /option-chain
+2025-09-10 16:10:30,990 | WARNING | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=12)")': /option-chain
+2025-09-10 16:10:45,439 | WARNING | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=12)")': /option-chain
+2025-09-10 16:11:02,403 | WARNING | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=12)")': /option-chain
+2025-09-10 16:11:28,526 | WARNING | Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=NIFTY
+2025-09-10 16:11:43,798 | WARNING | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=NIFTY
+2025-09-10 16:12:00,234 | WARNING | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=NIFTY
+2025-09-10 16:12:19,204 | WARNING | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=NIFTY
+2025-09-10 16:12:46,498 | WARNING | Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=12)")': /option-chain
+2025-09-10 16:12:59,820 | WARNING | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=12)")': /option-chain
+2025-09-10 16:13:14,276 | WARNING | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=12)")': /option-chain
+2025-09-10 16:13:31,113 | WARNING | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=12)")': /option-chain
+2025-09-10 16:13:57,204 | WARNING | Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=NIFTY
+2025-09-10 16:14:12,477 | WARNING | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=NIFTY
+2025-09-10 16:14:28,996 | WARNING | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=NIFTY
+2025-09-10 16:14:47,837 | WARNING | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=NIFTY
+2025-09-10 16:15:15,542 | WARNING | Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=12)")': /option-chain
+2025-09-10 16:15:28,783 | WARNING | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=12)")': /option-chain
+2025-09-10 16:15:43,222 | WARNING | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=12)")': /option-chain
+2025-09-10 16:16:00,060 | WARNING | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=12)")': /option-chain
+2025-09-10 16:16:26,222 | WARNING | Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=NIFTY
+2025-09-10 16:16:41,485 | WARNING | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=NIFTY
+2025-09-10 16:16:57,917 | WARNING | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=NIFTY
+2025-09-10 16:17:16,768 | WARNING | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=14)")': /api/option-chain-indices?symbol=NIFTY
+2025-09-10 16:17:31,906 | WARNING | NIFTY: empty fetch
+2025-09-10 17:14:08,740 | INFO | Outside market window; proceeding anyway (may be empty).
+2025-09-10 17:14:09,163 | ERROR | BANKNIFTY: update_live_data error: Error binding parameter 1: type 'Timestamp' is not supported
+Traceback (most recent call last):
+  File "C:\Users\shant\Desktop\trading-radar\utils\live_updater.py", line 117, in update_live_data
+    n = _write_rows(analyzed)
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shant\Desktop\trading-radar\utils\live_updater.py", line 67, in _write_rows
+    c.executemany("""
+sqlite3.ProgrammingError: Error binding parameter 1: type 'Timestamp' is not supported
+2025-09-10 17:14:11,665 | ERROR | NIFTY: update_live_data error: Error binding parameter 1: type 'Timestamp' is not supported
+Traceback (most recent call last):
+  File "C:\Users\shant\Desktop\trading-radar\utils\live_updater.py", line 117, in update_live_data
+    n = _write_rows(analyzed)
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shant\Desktop\trading-radar\utils\live_updater.py", line 67, in _write_rows
+    c.executemany("""
+sqlite3.ProgrammingError: Error binding parameter 1: type 'Timestamp' is not supported
+2025-09-10 18:07:26,378 | INFO | Outside market window; proceeding anyway (may be empty).
+2025-09-10 18:07:29,247 | ERROR | BANKNIFTY: update_live_data error: name '_write_rows' is not defined
+Traceback (most recent call last):
+  File "C:\Users\shant\Desktop\trading-radar\utils\live_updater.py", line 137, in update_live_data
+    n = _write_rows(analyzed)
+        ^^^^^^^^^^^
+NameError: name '_write_rows' is not defined
+2025-09-10 18:07:31,431 | ERROR | NIFTY: update_live_data error: name '_write_rows' is not defined
+Traceback (most recent call last):
+  File "C:\Users\shant\Desktop\trading-radar\utils\live_updater.py", line 137, in update_live_data
+    n = _write_rows(analyzed)
+        ^^^^^^^^^^^
+NameError: name '_write_rows' is not defined
+2025-09-10 18:18:35,362 | INFO | Outside market window; proceeding anyway (may be empty).
+2025-09-10 18:18:36,488 | ERROR | BANKNIFTY: update_live_data error: name '_write_rows' is not defined
+Traceback (most recent call last):
+  File "C:\Users\shant\Desktop\trading-radar\utils\live_updater.py", line 137, in update_live_data
+    n = _write_rows(analyzed)
+        ^^^^^^^^^^^
+NameError: name '_write_rows' is not defined
+2025-09-10 18:18:39,549 | ERROR | NIFTY: update_live_data error: name '_write_rows' is not defined
+Traceback (most recent call last):
+  File "C:\Users\shant\Desktop\trading-radar\utils\live_updater.py", line 137, in update_live_data
+    n = _write_rows(analyzed)
+        ^^^^^^^^^^^
+NameError: name '_write_rows' is not defined
+2025-09-10 18:34:48,011 | INFO | BANKNIFTY: upserted 859 rows
+2025-09-10 18:34:48,970 | INFO | NIFTY: upserted 1323 rows

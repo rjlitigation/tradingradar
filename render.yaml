@@ -1,0 +1,39 @@
+<<<<<<< HEAD
+services:
+  - type: web
+    name: tradingradar
+    env: python
+    plan: free
+    runtime: python
+    buildCommand: |
+      pip install -r requirements.txt
+    startCommand: |
+      python -m app.bootstrap
+    autoDeploy: true
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: TELEGRAM_CHANNEL_ID
+        sync: false
+      - key: POSTGRES_URL
+        sync: false
+      - key: USERS_DB_PATH
+        value: data/users.db
+      - key: ANOM_DB_PATH
+        value: data/anomalies.db
+=======
+services:
+  - type: web
+    name: tradingradar
+    env: python
+    plan: free
+    buildCommand: |
+      pip install -r requirements.txt
+    startCommand: |
+      # 🔹 Run updater bootstrap once before starting Streamlit
+      python app/bootstrap.py || true
+      streamlit run app/replay.py --server.port=$PORT --server.address=0.0.0.0
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+>>>>>>> 5acb3a7 (Update project files)

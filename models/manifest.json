@@ -1,0 +1,23 @@
+{
+  "model_id": "ai_ranker_v1",
+  "framework": "sklearn",
+  "trained_on": "2025-09-05T00:00:00Z",
+  "training_window": "60d",
+  "features": [
+    "changeInOI_z_15",
+    "volume_z_15",
+    "iv_z_5",
+    "dist_to_vwap_bps",
+    "pct_otm"
+  ],
+  "feature_hash": "f62a9c7",
+  "calibration": {
+    "bands": ["typical", "elevated", "high", "very_high"],
+    "method": "quantile"
+  },
+  "metrics": {
+    "precision_at_10": 0.61,
+    "brier_score": 0.182,
+    "expected_calibration_error": 0.047
+  }
+}

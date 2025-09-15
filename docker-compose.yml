@@ -1,0 +1,49 @@
+version: "3.9"
+services:
+  app:
+    image: python:3.11-slim
+    working_dir: /app
+    volumes: [".:/app", "./data:/app/data"]
+    command: bash -lc "pip install -r requirements.txt && streamlit run app/landing.py --server.port=8501 --server.headless=true"
+    environment:
+      - PUBLIC_BASE_URL=https://www.tradingradar.in
+      - PUBLIC_API_BASE=https://www.tradingradar.in/api
+      - STREAMLIT_SERVER_ENABLECORS=false
+      - STREAMLIT_SERVER_ENABLEXSRSFPROTECTION=false
+      - PYTHONUNBUFFERED=1
+      - RAZORPAY_KEY_ID=${RAZORPAY_KEY_ID}
+      - RAZORPAY_KEY_SECRET=${RAZORPAY_KEY_SECRET}
+    expose: ["8501"]
+
+  api:
+    image: python:3.11-slim
+    working_dir: /app
+    volumes: [".:/app", "./data:/app/data"]
+    command: bash -lc "pip install -r requirements.txt && uvicorn server.payments_api:app --host 0.0.0.0 --port 8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - RAZORPAY_KEY_ID=${RAZORPAY_KEY_ID}
+      - RAZORPAY_KEY_SECRET=${RAZORPAY_KEY_SECRET}
+    expose: ["8000"]
+
+  scheduler:
+    image: python:3.11-slim
+    working_dir: /app
+    volumes: [".:/app", "./data:/app/data"]
+    command: bash -lc "pip install -r requirements.txt && python ops/scheduler.py"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - SCHED_SLEEP_SEC=60
+
+  caddy:
+    image: caddy:2
+    ports: ["80:80", "443:443"]
+    volumes:
+      - "./Caddyfile:/etc/caddy/Caddyfile:ro"
+      - "caddy_data:/data"
+      - "caddy_config:/config"
+    depends_on: [app, api]
+
+volumes:
+  caddy_data:
+  caddy_config:

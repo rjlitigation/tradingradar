@@ -1,0 +1,27 @@
+# config/platform.yml
+mode: manual        # manual | copilot | autopilot
+
+safety:
+  max_alerts_per_hour: 6
+  drift_guard_enabled: true
+  fallback_to_baseline_on_error: true
+
+compliance:
+  language: educational_only
+  advice_block: true
+
+tiers:
+  free:
+    show_scores: false
+    heatmap_delay_min: 10
+  tier1:
+    show_scores: true
+    top_k: 10
+  tier2:
+    show_scores: true
+    top_k: 100
+    personalization: true
+
+ops:
+  retrain_daily_utc: "23:30"
+  rollback_if_calibration_worse_pct: 15

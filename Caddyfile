@@ -1,0 +1,10 @@
+tradingradar.in, www.tradingradar.in {
+  encode gzip
+  @api path /api* 
+  handle @api {
+    reverse_proxy api:8000
+  }
+  handle {
+    reverse_proxy app:8501
+  }
+}
