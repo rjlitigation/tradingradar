@@ -10,6 +10,19 @@ from utils.storage import init_db, save_anomaly
 from utils.db_users import init_user_db
 init_user_db()
 
+from flask import Flask
+from app.legal import legal_bp
+
+app = Flask(__name__)
+app.register_blueprint(legal_bp)
+
+@app.route("/")
+def home():
+    return "TradingRadar Platform is Live 🚀"
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8000, debug=True)
+
 
 INSTRUMENTS = ["BANKNIFTY", "NIFTY"]
 
